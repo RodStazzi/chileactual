@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Server con NodeMailer</title>
+</head>
+
+<body>
+  <form action="/enviar">
+    <div>
+      <h1>BIENVENIDO A LA CASILLA DE<br> INFORMACIÓN ACTUALIZADA <br> DE DATOS DE CHILE Y SANTIAGO.</h1>
+      <p class="lead">Coloca tu mail y un mensaje. <br> Recibirás información actualizada de Indicadores Económicos, <br> Últimos 3 Sismos en el País, Clima de Santiago <br> y las Farmacias de Turno para el día de Hoy en la capital.</p>
+    </div>
+    <div class="resultado" style="color: green; font-style: italic"></div>
+    <h2>Enviar Correo</h2>
+    <div class="form-wrap">
+      <label>Para</label>
+      <input id="mail" type="text" name="to">
+      <p class="errorMail" style="color: red; font-style: italic"></p>
+    </div>
+
+    <div class="form-wrap">
+      <label>Asunto</label>
+      <input id="asunto" value="Info Chile" type="text" name="subject">
+      <p class="errorAsunto" style="color: red; font-style: italic"></p>
+    </div>
+
+    <div class="form-wrap">
+      <label>Texto</label>
+      <textarea id="texto" name="text"></textarea>
+      <p class="errorTexto" style="color: red; font-style: italic"></p>
+    </div>
+
+
+
+    <button type="submit">Enviar</button>
+
+    <div
+                                style="color: #040404; line-height: 160%; text-align: center; word-wrap: break-word;">
+                                <p style="font-size: 14px; line-height: 160%;">by<div>
+                                <a href="https://rosta.netlify.app/"> <img class="img-foot" style="width: 120px" src="https://i.ibb.co/PY2mNNr/ro-sta-negro-sf.png"> </a>
+                              </div>© 2022
+                                </p>
+                              </div>
+  </form>
+
+  
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
